@@ -6,8 +6,9 @@ services:
     ports:
       - "8080:80"
     environment:
-      WORDPRESS_DB_HOST: mysql.railway.internal:3306
+      WORDPRESS_DB_HOST: mysql.railway.internal
+      WORDPRESS_DB_PORT: 3306
       WORDPRESS_DB_USER: root
       WORDPRESS_DB_PASSWORD: HXCfknROJI1ShLeVuXxEDyfWfwDpckTH
       WORDPRESS_DB_NAME: railway
-    restart: alway
+    restart: always
